@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:adjustViewBounds="true"
+    android:orientation="vertical"
+    android:layout_margin="@dimen/margin_4"
+    app:contentPadding="@dimen/margin_8"
+    app:cardElevation="@null">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="@dimen/margin_70"
+            android:layout_height="@dimen/margin_70"
+            android:padding="@dimen/margin_4"
+            android:id="@+id/flagImage"
+            android:src="@mipmap/ic_launcher"
+            android:layout_centerVertical="true"/>
+
+
+        <RelativeLayout
+            android:id="@+id/wrapperLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/margin_8"
+            android:layout_toEndOf="@id/flagImage">
+
+            <TextView
+                android:id="@+id/currency"
+                style="@style/TextAppearance.AppCompat.Large"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dummyCurr"
+                android:textAllCaps="true"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/currName"
+                style="@style/TextAppearance.AppCompat.Medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/currency"
+                android:text="@string/dummyName" />
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/amountEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/margin_14"
+            android:hint="@string/hint"
+            android:inputType="number"
+            android:singleLine="true"/>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

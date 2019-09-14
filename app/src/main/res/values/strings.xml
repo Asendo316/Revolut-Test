@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Rates</string>
+    <string name="hint">0.00</string>
+    <string name="dummyName">US Dollar</string>
+    <string name="dummyCurr">USD</string>
+
+
+
+</resources>
